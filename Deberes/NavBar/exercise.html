@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            nav {
+                height: 40px;
+                width: 100%;
+                background-color:rgb(8, 43, 43);
+                position: absolute;
+                display: flex;
+                flex-direction: row;
+                align-items:center;
+                justify-content:start;
+
+            }
+            .Home {
+                color:antiquewhite;
+            }
+            h1 {
+                color:antiquewhite;
+                margin-left: 1%;
+
+            }
+            .link {
+                color: grey;
+            }
+            select {
+                color:grey;
+                border-style: hidden;
+            }
+            .disabledB{
+                color: gray;
+            }
+            .nav{
+                margin-right: 5%;
+
+            }
+            .button{
+                border-color: green;
+                border-radius: 10%;
+                color: green;
+                background-color: rgb(8, 43, 43) ;
+            }
+            .Search{
+                color:rgb(201, 198, 198);
+                border-radius: 10%;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <h1 class="nav">Navbar</h1>
+            <a class="Home" class="nav" href="index.html"  >Home</a>
+            <a class="Link" class="nav" href="https://www.google.com" target="_blank" >Google</a>
+            <select class="nav">
+                <option>Dropdown</option>
+                <option>First option</option>
+                <option>Second one</option>
+                <option>Third one</option>
+            </select>
+            <button disabled="on" class="nav" class="disabledB">Disabled</button>
+            <input type="text" class="search" class="nav" placeholder="Search"/>
+            <button class="button" class="nav">Search</button>
+        </nav>
+    </body>
+</html>
