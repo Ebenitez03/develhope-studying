@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color: black;
+            }
+            nav {
+                height: 40px;
+                width: 100%;
+                background-color:rgb(8, 43, 43);
+                position: absolute;
+                display: flex;
+                flex-direction: row;
+                align-items:center;
+                justify-content:start;
+
+            }
+            .Home {
+                color:antiquewhite;
+            }
+            .link {
+                color: grey;
+            }
+            select {
+                color:grey;
+                border-style: hidden;
+            }
+            .disabledB{
+                color: gray;
+            }
+            .nav{
+                margin-right: 5%;
+
+            }
+            .title{
+                margin: 2%;
+                color: whitesmoke;
+            }
+            .button{
+                border-color: green;
+                border-radius: 10%;
+                color: green;
+                background-color: rgb(8, 43, 43) ;
+            }
+            .Search{
+                color:rgb(201, 198, 198);
+                border-radius: 10%;
+            }
+            .card{
+                height: 500px;
+                width: 300px;
+                background-color:white;
+                position: absolute;
+                margin: 50px 10px 10px 10px;
+                display: flex;
+                flex-direction:column;
+                justify-content: center;
+            }
+            .top{
+                width: 90%;
+                height: 90%;
+                margin: 5%;
+                text-align: center;
+                border: 1px dashed black;
+            }
+            .bottom{
+                position:relative;
+                margin: 5%;
+                width: 90%;
+                height: 90%;
+
+            }
+            section{
+                border: 1px dashed black;
+            }
+            article{
+                border: 1px dashed black;
+            }
+            img{
+                position:relative;
+                top: 0px;
+                width: 90%;
+                height: 90%;
+                object-fit: contain;
+                margin: 10px 10px 10px 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <h1 class="title" class="nav">Navbar</h1>
+            <a class="Home" class="nav" href="index.html"  >Home</a>
+            <a class="Link" class="nav" href="https://www.google.com" target="_blank" >Google</a>
+            <select class="nav">
+                <option>Dropdown</option>
+                <option>First option</option>
+                <option>Second one</option>
+                <option>Third one</option>
+            </select>
+            <button disabled="on" class="nav" class="disabledB">Disabled</button>
+            <input type="text" class="search" class="nav" placeholder="Search"/>
+            <button class="button" class="nav">Search</button>
+        </nav>
+        <section>
+            <div class="card">
+                <div class="top">
+                    <img alt="Image cap" src="C:\Users\elian\git-start\develhope-studying\Deberes\Card\Image cap.jpg"/>
+                </div>
+                <div class="bottom"> 
+                    <article>
+                        <h1>Cap</h1>
+                        <p>
+                            Why you need to put on a cap?
+                            <br/>Because it'll protect you
+                            of the sun.<br/>
+
+                        </p>
+                    </article>
+                    <section>
+                        <p>An item</p>
+                    </section>
+                    <section>
+                        <p>A second item</p>
+                    </section>
+                    <section>
+                        <p>A third item</p>
+                    </section>
+                    <section>
+                        <a href="C:\Users\elian\git-start\develhope-studying\Deberes\Card\exercise.html" target="_blank"> Card link</a>
+                        <a href="C:\Users\elian\git-start\develhope-studying\Deberes\Card\exercise.html" target="_blank">Another link</a>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
