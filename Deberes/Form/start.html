@@ -32,6 +32,12 @@
         align-items: center;
         justify-content: center;
       }
+      .close{
+        width: 10px;
+        height: 10px;
+        position: relative;
+        flex: content;
+      }
     </style>
   </head>
 
@@ -44,14 +50,15 @@
       <input type="text" placeholder="Full name">
       <input type="date" placeholder="Birth Date"/>
       <input type="tel" placeholder="Phone number"/>
-            <!-- Trigger/Open The Modal -->
-      <checkbox id="myPlan">Pro Plan</checkbox>
-      <div id="Plan" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <p>Some text in the Modal..</p>
-        </div>
+      <div>
+        <checkbox id="myPlan">Pro Plan</checkbox>
+        <div id="Plan" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+          </div>
 
+        </div>
       </div>
       <label for="ProPlan"> Pro Plan</label>
       <input type="checkbox" id="ProPlan" name="ProPlan" value="Pay"><br/>
