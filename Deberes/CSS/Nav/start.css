@@ -1,0 +1,236 @@
+::-webkit-scrollbar {
+    display: none;
+  }
+  * { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .text-box:hover{
+    background-color: green;
+
+  }
+.text-box:hover::placeholder{
+  color:white
+}
+  body{
+    background-color: black;
+    min-width: 100vw;
+    min-height: 100vh;
+    padding: 0;
+    overflow: hidden;
+  }
+  select {
+    font-weight: bold;
+    background: var(--blue);
+    color: var(--white);
+    padding: .75rem 1.75rem;
+    border-radius: 5px;
+
+    background-color: transparent;
+    border: hidden;
+
+  }
+
+  section{
+    border: 1px solid black;
+  }
+  article{
+    border: 1px solid salmon;
+  }
+  img{
+    position:relative;
+    top: 0px;
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+    align-items: center;
+    justify-content: center;
+  }
+  form{
+    background-color: black;
+    border: 5px solid red;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  footer{
+    height: 10%;
+    width: 100%;
+    z-index: 1;
+    background-color: rgb(26, 133, 227);
+    position: absolute;
+    top: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  
+  }
+  button{
+    font-weight: bold;
+    background: var(--blue);
+    color: var(--white);
+    padding: .75rem 1.75rem;
+    border-radius: 5px;
+
+    background-color: transparent;
+    border: hidden;
+  }
+  nav {
+    background-color:rgb(34, 37, 47);
+    border: 5px transparent;
+
+    min-width: 100vw;
+    max-height: 50%;
+    z-index: 1;
+
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-around;
+
+    overflow: hidden;
+    object-fit: contain;
+  }
+
+  .titles{
+    min-width: 10%;
+    max-height: 30px;
+
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    margin-top: 5px;
+
+  }
+  .buttons{
+    min-width: 35%;
+    max-height: 40px;
+    position: relative;
+
+    margin: 5px;
+
+    object-fit: contain;
+    overflow: hidden;
+
+    background-color: transparent;
+    border: hidden;
+  }
+  .search{
+    min-width: 35%;
+    max-height: 40px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    object-fit: contain;
+
+    margin-top: 5px;
+
+    border-radius: 5%;
+  }
+
+  .nav-card{
+    min-width: 100%;
+    height: 50px;
+
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+    align-items: start;
+    justify-content: space-around;
+  }
+  .title{
+    color: whitesmoke;
+  }
+  .home {
+    color: white;
+  }
+  .link {
+    color: grey;
+  }
+  .dropdown{
+    color:grey;
+  }
+  .text-box{
+    color: grey;
+    min-width: fit-content;
+    min-height: fit-content;
+    position: relative;
+
+    font-weight: bold;
+
+    border-radius: 5%;
+  }
+  .button{
+    border: 1px solid green;
+
+    color: green;
+    background-color: rgb(8, 43, 43);
+
+  }
+  .buttond{
+    color: grey;
+    background-color: transparent;
+    border: hidden;
+  }
+
+  
+  .card{
+    height: 85%;
+    width: 100%;
+    top: 50px;
+    background-color: aliceblue;
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card2{
+    height: 85%;
+    width: 80%;
+    top: 50px;
+    background-color: rgb(145, 47, 72);
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-top{
+    width: 90%;
+    height: 40%;
+    text-align: center;
+    position: relative;
+    margin: 5% 5% 5% 5%;
+    justify-content: center;
+    border: 1px solid black;
+  }
+  .card-bottom{
+    position:relative;
+    margin: 5% 5% 5% 5%;
+    width: 90%;
+    height: 50%;
+  
+  }
+  .card-footer{
+    position: relative;
+    margin: 5% 5% 5% 5%;
+    height: 10%;
+    width: 90%;
+  }
+  
+  .Presentación{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+  }
