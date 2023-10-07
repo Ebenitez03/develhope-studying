@@ -32,13 +32,13 @@ ul li {
 }
 
 .link1{
-  initial-value: inherit;
+  all: inherit;
 }
 
 .link2 a {
-  initial-value: initial;
+  all: initial;
 }
 
 .link3 a {
-  initial-value: natural;
+  all: unset;
 }
