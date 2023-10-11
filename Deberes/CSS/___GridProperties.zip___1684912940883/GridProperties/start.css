@@ -1,0 +1,44 @@
+html, body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+body{
+    display: grid;
+    grid-template-columns: repeat(6, 2fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 40px;
+}
+
+ul{
+    width: 300px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(2,150px);
+    grid-template-rows: repeat(2, 150px);
+    
+    margin: 10px;
+
+}
+
+
+#green{
+    grid-area: 1/1/1/7;
+}
+
+#yellow{
+    grid-area: 2/1/4/3;
+}
+
+#red{
+    grid-area: 2/3/4/5;
+}
+
+#orange{
+    grid-area: 4/1/4/5;
+}
+
+#blue{
+    grid-area: 2/5/5/7;
+}
