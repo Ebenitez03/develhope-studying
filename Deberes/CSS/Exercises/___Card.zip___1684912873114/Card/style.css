@@ -49,6 +49,9 @@ nav {
   align-items: center;
   justify-content: center;
   gap: 5%;
+
+  
+
 }
 nav > select {
   width: 5000px;
@@ -58,6 +61,10 @@ nav > select {
   border: 1px hidden black;
   border-style: hidden;
   display: none;
+}
+.nav{
+  text-decoration: none;
+
 }
 .Home {
   color: antiquewhite;
@@ -83,66 +90,74 @@ nav > select {
     *Aquí acaba el css de la Nav
     */
 .card {
-  width: 100%;
-  height: 100%;
+  width: 450px;
+  height: 690px;
 
   background-color: white;
+  border-radius: 10px;
+
+  margin: 0;
 
   position: relative;
-
-  grid-area: 1/1/3/1;
-  object-fit: contain;
 
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+
+  overflow: hidden;
 }
 
 .top {
-  width: 90%;
-  height: 40%;
-
-  border: 1px dashed red;
+  width: 450px;
+  height: 260px;
 
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-.bottom {
-  width: 90%;
-  height: 60%;
-
-  border: 1px dashed red;
-
-  position: relative;
-  justify-content: center;
-  align-items: center;
-
-  font-size: xx-large;
-}
-
 .img-container {
-  width: 90%;
-  height: 90%;
-
-  border: 1px solid palevioletred;
+  width: 100%;
+  height: 100%;
 
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-self: center;
+
   overflow: hidden;
-  object-fit: contain;
+
 }
 img {
   width: 100%;
   height: 100%;
-  justify-self: stretch;
+
+  object-fit: cover;
 }
 
+
+.bottom {
+  width: 100%;
+  height: 430px;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+
+  font-size: x-large;
+}
+
+.bottom>div{
+  width: 100%;
+  border: 1px solid gray;
+  display: flex;
+  gap: 5px;
+  align-items:center ;
+  align-self: stretch;
+}
+
+
+
+/*
 @media (min-width: 1024px) {
   html,
   body {
@@ -220,9 +235,7 @@ img {
     color: rgb(201, 198, 198);
     border-radius: 10%;
   }
-  /** 
-    *Aquí acaba el css de la Nav
-    */
+
   .card {
     width: 500;
     height: 500;
@@ -280,3 +293,4 @@ img {
     object-fit: contain;
   }
 }
+*/
