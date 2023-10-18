@@ -1,0 +1,45 @@
+:root{
+    --yellow: rgb(206, 206, 77);
+    --red: rgb(165, 20, 20);
+}
+@media (max-width:425px){
+    .search{
+        display: none;
+    }
+}
+@media (min-width:768px) {
+    
+    nav{
+        height: 300%;
+    }
+    select{
+        background-color: var(--red);
+    }
+    .search{
+        display: none;
+    }
+}
+
+@media (min-width:1024px){
+    nav{
+        height: 100px;
+    }
+    .hamburguers{
+        background-color: var(--yellow);
+    }
+    .drinks{
+        background-color: var(--red);
+    }
+    .menu{
+        background-color: var(--yellow);
+    }
+    .search{
+        width: auto;
+        height: 60px;
+        display: flex;
+        color: var(--red);
+        background-color: var(--yellow);
+        border-radius: 10px;
+
+    }
+}
