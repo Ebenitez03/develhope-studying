@@ -1,6 +1,5 @@
 html, body{
     width: 100vw;
-    min-height: 100vh;
     position: relative;
     display: flex;
     align-items: center;
@@ -10,11 +9,11 @@ html, body{
 }
 main{
     width: 100vw;
-    height: 100vh;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 10px;
 }
 img{
     width: 100%;
@@ -23,8 +22,8 @@ img{
 }
 
 .card{
-    width: 375px;
-    height: 580px;
+    width: 360px;
+    height: 560px;
 
     border-radius: 10px;
     box-shadow: 5px;
@@ -39,7 +38,7 @@ img{
     overflow: hidden;
 }
 .top{
-    width: 375px;
+    width: 360px;
     height: 435px;
 
     margin: 0;
@@ -111,19 +110,19 @@ img:nth-of-type(1){
 
 }
 .bottom{
-    width: auto;
-    height: auto;
+    width: 360px;
+    height: 125px;
 }
 .buttons{
-    width: auto;
-    height: auto;
+    max-width: 100%;
+    height: 30px;
 
     position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    margin: 10px;
+    padding: 10px;
     gap:10px;
 }
 .like{
@@ -147,12 +146,15 @@ img:nth-of-type(1){
     border: transparent;
 }
 .userDescription{
+    max-width: 100%;
+    height: 65px;
     position: relative;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: flex-start; 
+    align-items: center; 
+    justify-content: center;
+    padding: 10px;
 }
+
 @media(max-width:425px) {
     main{
         flex-direction: column;
@@ -162,6 +164,13 @@ img:nth-of-type(1){
 }
 
 @media (min-width:768px){
+    main{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 1024px){
     main{
         flex-direction: row;
         flex-wrap: wrap;
