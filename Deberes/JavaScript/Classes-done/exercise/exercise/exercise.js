@@ -7,13 +7,6 @@ class Person{
     }
 
 }
-
-class Developer extends Person{
-    constructor(firstName,lastName,role){
-        super(firstName,lastName);
-        this.role=role;
-    }
-}
-const developer = new Developer('Mario', 'Rossi',"Front-End");
+const developer = new Person('Mario', 'Rossi');
 console.log(developer);
 console.log(developer.firstName + " " + developer.lastName);
