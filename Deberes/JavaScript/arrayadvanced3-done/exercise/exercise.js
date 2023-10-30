@@ -1,14 +1,8 @@
-/*function calculateAverageAge(persons){
-  average = persons.reduce((a,b)=>{
-    average= (a+b)/persons.lenght;
-    return average;
-  });
-}*/
-function calculateAverageAge(persons) {
-  let nicknames=persons.reduce((i)=>{
-    let average=persons[0].age+persons[i].age;
-    return average;
-  });
+function calculateAverageAge(persons){
+  const initialValue= 0;
+  const average = persons.reduce((acumulador,currentValue)=>
+    acumulador+currentValue.age,initialValue);
+  return average/persons.length;
 }
 
 const persons = [

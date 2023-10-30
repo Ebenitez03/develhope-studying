@@ -1,5 +1,9 @@
 function uncompletedNotes(notes) {
-  // ...
+   const resultado= notes.map((note) => {
+      const uncompletedToDos=note.todos.filter((todo)=>!todo.done);
+      return uncompletedToDos;
+    });
+    return resultado;
 }
 
 const notes = [
@@ -52,4 +56,8 @@ const notes = [
   },
 ];
 
-uncompletedNotes(notes);
+const resultado=uncompletedNotes(notes);
+
+resultado.forEach(element => {
+  console.log(element);
+});
