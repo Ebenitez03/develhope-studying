@@ -13,3 +13,8 @@ const personInfo = {
 };
 
 console.log(id, personInfo);
+const { id, ...personInfo } = person;
+console.log(person); 
+
+//No entiendo por qué no funciona
+//Preguntaré en clase
