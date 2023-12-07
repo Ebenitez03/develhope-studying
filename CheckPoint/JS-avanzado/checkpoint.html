@@ -1,0 +1,43 @@
+<!-- // 
+Escriba una función que utilice la API de GitHub para obtener la lista de 
+repositorios para un usuario determinado ('https://api.github.com/users/' 
+// + usuario + '/repos'). 
+// La función toma el nombre del usuario (ponga 'google' como nombre) como parámetro y devuelve una Promesa que se 
+// resuelve con el conjunto de repositorios. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let usuario = "Ebenitez03";
+      async function listaRepo(nombre) {
+        try {
+          let response = await fetch(
+            `https://api.github.com/users/${nombre}/repos`
+          );
+          let result = await response.json();
+
+          const list = document.createElement('ul');
+
+          result.forEach(element => {
+            const li = document.createElement('li');
+            li.textContent = element.name;
+            list.appendChild(li);
+          });
+           const body = document.querySelector('body');
+           body.appendChild(list);
+        } catch (error) {
+          console.error(error);
+        }
+      }
+
+      listaRepo(usuario);
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
